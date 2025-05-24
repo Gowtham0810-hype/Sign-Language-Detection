@@ -94,8 +94,6 @@ This script uses your trained model to perform real-time sign language recogniti
 
 ---
 
----
-
 ## Screenshots
 
 To give you a visual idea of how the Sign Language Recognition System operates, here are some screenshots from the real-time inference module (`test.py`):
@@ -111,7 +109,6 @@ For signs requiring two hands, the system intelligently combines the bounding bo
 
 <img src="screenshot/b.png" alt="B sign detection" width="500px" height="275px">
 <img src="screenshot/a.png" alt="A sign detection" width="500px" height="275px">
----
 
 ## Project Structure
 ```bash
