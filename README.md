@@ -110,7 +110,25 @@ This script uses your trained model to perform real-time sign language recogniti
 └── README.md                # This file
 ```
 ---
+---
 
+## Screenshots
+
+To give you a visual idea of how the Sign Language Recognition System operates, here are some screenshots from the real-time inference module (`test.py`):
+
+
+**1. Detecting a Single Hand Sign (e.g., 'C')**
+This image demonstrates the system accurately identifying a single hand gesture. You can see the bounding box around the hand and the predicted label with its confidence score.
+
+![Screenshot of Single Hand Detection](path/to/your/single_hand_screenshot.png)
+
+**2. Detecting a Dual Hand Sign (e.g., 'A','B')**
+For signs requiring two hands, the system intelligently combines the bounding boxes to enclose both hands before processing and classification.
+
+![A sign recognition](path/to/your/dual_hand_screenshot.png
+![B sign recognition](path/to/your/dual_hand_screenshot.png)
+
+---
 ## Future Enhancements
 
 * **Expanded Vocabulary:** Train the model on a much larger dataset of ISL signs, including more letters, numbers, and common words/phrases.
