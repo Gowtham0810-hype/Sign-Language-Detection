@@ -12,7 +12,7 @@ This project aims to provide a foundational tool for enhancing communication acc
 
 * **Real-time Hand Detection:** Utilizes `cvzone.HandDetector` (powered by MediaPipe) to accurately locate and track one or two hands in the webcam feed.
 * **Dynamic Crooping and Preprocessing:** Automatically crops the region of interest around the detected hand(s), resizes it to a standardized input size (300x300 pixels), and places it on a white background, maintaining aspect ratio.
-* **Deep Learning Classification:** Employs a pre-trained Keras model (`keras_model.h5`) to classify the processed hand images into predefined sign language labels (e.g., "A", "B", "C").
+* **Deep Learning Classification:** Employs a pre-trained Keras model (`keras_model.h5`) to classify the processed hand images into predefined sign language labels (e.g., "A", "B", "C","D).
 * **Confidence-Based Prediction Display:** Only displays predictions when the model's confidence exceeds a specified threshold, reducing erroneous readings.
 * **Custom Data Capture:** Includes a dedicated script (`datacapture.py`) to easily collect new image data for specific signs, enabling the training or fine-tuning of custom models. This supports both single and dual-hand sign collection.
 * **User-Friendly Interface:** Provides a live visual feedback loop with bounding boxes and predicted labels overlaid on the webcam stream.
@@ -57,8 +57,9 @@ Before you begin, ensure you have the following installed:
     0 A
     1 B
     2 C
+    3 D
     ```
-    *(Note: Your current `labels` list in `test.py` implies that the `labels.txt` file should map index 0 to 'A', 1 to 'B', and 2 to 'C'.)*
+    *(Note: Your current `labels` list in `test.py` implies that the `labels.txt` file should map index 0 to 'A', 1 to 'B', 2 to 'C' and 3 to 'D.)*
 
 ---
 
@@ -104,11 +105,12 @@ This image demonstrates the system accurately identifying a single hand gesture.
 
 <img src="screenshot/c.png" alt="Screenshot of Single Hand Detection" width="500px" height="275px">
 
-**2. Detecting a Dual Hand Sign (e.g., 'A','B')**
+**2. Detecting a Dual Hand Sign (e.g., 'A','B','D')**
 For signs requiring two hands, the system intelligently combines the bounding boxes to enclose both hands before processing and classification.
 
 <img src="screenshot/b.png" alt="B sign detection" width="500px" height="275px">
 <img src="screenshot/a.png" alt="A sign detection" width="500px" height="275px">
+<img src="screenshot/a.png" alt="D sign detection" width="500px" height="275px">
 
 ## Project Structure
 ```bash
