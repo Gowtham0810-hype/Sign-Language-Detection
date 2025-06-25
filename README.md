@@ -143,6 +143,7 @@ For signs requiring two hands, the system intelligently combines the bounding bo
 
 * [Sarvesh R R](https://github.com/Sarvesh200416)
 * [Raj K](https://github.com/Raj-2005)
+* [A G Sriee Arvinth Raajhen](https://github.com/Arvinthari)
 
 ---
 
